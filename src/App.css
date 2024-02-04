@@ -20,10 +20,10 @@
 }
 
 .title {
-  font-family: "Telefon Black", Sans-Serif;
+  font-family: 'Telefon Black', Sans-Serif;
   font-size: 4em;
   font-weight: bold;
-  color: #17A;
+  color: #17a;
   position: relative;
   display: block;
   width: 100%;
@@ -34,10 +34,10 @@
 }
 
 .description {
-  font-family: "Telefon Black", Sans-Serif;
+  font-family: 'Telefon Black', Sans-Serif;
   font-size: 0.9em;
   font-style: italic;
-  color: #AAA;
+  color: #aaa;
   position: relative;
   display: block;
   width: 100%;
@@ -56,11 +56,13 @@
   transform: scale(0.3);
   transform-origin: 50% 100%;
   margin: auto;
-  background: url('https://freesvg.org/img/rocket-297573.png') left center;  
+  background: url('https://freesvg.org/img/rocket-297573.png') left center;
 }
 
 @keyframes play {
-	100% { background-position: -1072px; }
+  100% {
+    background-position: -1072px;
+  }
 }
 
 .fire {
@@ -72,13 +74,18 @@
   left: 50%;
   margin: auto;
   transform: scale(8);
-  background: url('http://jlongster.com/s/canvas-tutorial/sprites.png') left bottom;
+  background: url('http://jlongster.com/s/canvas-tutorial/sprites.png') left
+    bottom;
   animation: burn 1.5s steps(13) infinite;
 }
 
 @keyframes burn {
-  from { background-position: 8px 100%; }
-  to { background-position: -520px 100%; }
+  from {
+    background-position: 8px 100%;
+  }
+  to {
+    background-position: -520px 100%;
+  }
 }
 
 .crash > .fire {
@@ -87,11 +94,11 @@
 
 #restart {
   opacity: 0;
-  font-family: "Telefon Black", Sans-Serif;
+  font-family: 'Telefon Black', Sans-Serif;
   font-size: 5em;
   font-weight: bold;
-  color: #FFF;
-  background-color: #17A;
+  color: #fff;
+  background-color: #17a;
   position: absolute;
   padding: 25px 75px;
   left: 30px;
