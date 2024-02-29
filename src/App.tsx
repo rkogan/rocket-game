@@ -38,7 +38,7 @@ function App() {
     }, 50)
 
     return () => clearInterval(interval)
-  }, [gravity, maxLandingSpeed, rocket.speed])
+  }, [rocket.speed])
 
   const resetGame = () => {
     setCrash(false)
